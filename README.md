@@ -14,9 +14,9 @@ This project performs reputation analysis using sentiment analysis on textual da
 ## Models Used
 CardiffNLP/twitter-roberta-base-sentiment: A pre-trained RoBERTa model fine-tuned for sentiment analysis on Twitter data. It classifies text into three sentiment categories: Negative, Neutral, and Positive.
 ## Prerequisites
--Python 3.x
+Python 3.x
 
--requests library
+requests library
 
 beautifulsoup4 library
 
