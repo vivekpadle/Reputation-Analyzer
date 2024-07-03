@@ -1,5 +1,5 @@
 
-# Reputation Analysis Project
+# Reputation Analysis
 
 This project performs reputation analysis using sentiment analysis on textual data. By leveraging advanced natural language processing (NLP) techniques, this project extracts and analyzes the sentiment from various sources to provide comprehensive insights into the reputation of entities such as companies, products, or individuals.
 
