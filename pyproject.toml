@@ -1,0 +1,44 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "reputation-analyzer"
+version = "2.0.0"
+description = "Measure the online reputation of a company, product or person with news search and transformer sentiment analysis."
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [{ name = "Vivek Padale" }]
+dependencies = [
+    "requests>=2.31",
+    "beautifulsoup4>=4.12",
+    "lxml>=5.0",
+]
+
+[project.optional-dependencies]
+ml = ["transformers>=4.44", "torch>=2.2"]
+vader = ["vaderSentiment>=3.3.2"]
+extract = ["trafilatura>=1.12"]
+search = ["ddgs>=9.0"]
+llm = ["anthropic>=0.40"]
+app = ["streamlit>=1.38"]
+all = ["reputation-analyzer[ml,vader,extract,search,llm,app]"]
+dev = ["pytest>=8", "ruff>=0.6"]
+
+[project.scripts]
+reputation-analyzer = "reputation_analyzer.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["reputation_analyzer*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 110
+target-version = "py310"
+extend-exclude = ["legacy"]
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "B", "UP"]
+ignore = ["E501"]
