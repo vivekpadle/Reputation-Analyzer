@@ -7,6 +7,7 @@ name = "reputation-analyzer"
 version = "2.0.0"
 description = "Measure the online reputation of a company, product or person with news search and transformer sentiment analysis."
 readme = "README.md"
+license = { text = "MIT" }
 requires-python = ">=3.10"
 authors = [{ name = "Vivek Padale" }]
 dependencies = [

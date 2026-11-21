@@ -188,3 +188,7 @@ The original script is kept in `legacy/` for reference.
 ## Acknowledgments
 
 [Cardiff NLP TweetEval models](https://huggingface.co/cardiffnlp) · [GDELT Project](https://www.gdeltproject.org/) · [Hugging Face Transformers](https://huggingface.co/docs/transformers) · [trafilatura](https://trafilatura.readthedocs.io/) · [ddgs](https://pypi.org/project/ddgs/) · [VADER](https://github.com/cjhutto/vaderSentiment) · [Streamlit](https://streamlit.io/) · [Anthropic Claude API](https://docs.claude.com/)
+
+## License
+
+[MIT](LICENSE) © 2026 Vivek Padale
